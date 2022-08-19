@@ -1,6 +1,56 @@
-div {
+$grey: rgb(206, 206, 206);
+
+.locations-container {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5rem;
+
+    img{
+        width: 200px;
+        height: 280px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+    
+}
+
+.location-individual {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    margin-bottom: 3rem;
+}
+
+img.pin-point {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0;
+    filter: invert(64%) sepia(61%) saturate(5156%) hue-rotate(328deg) brightness(102%) contrast(92%);
+}
+
+.location-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    h1 {
+        position: absolute;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+}
+
+.location {
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+a{
+    color: $grey;
+}
+
+hr {
+    color: $grey;
+    margin-bottom: 50px;
 }

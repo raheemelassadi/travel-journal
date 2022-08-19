@@ -9,7 +9,7 @@ function Header(props){
 
         return(
             <div className="header-div">
-                <img src="./images/globe.png" alt="earth logo"/><h1>my travel journal.</h1>
+                <img src="./images/globe.png" alt="earth logo" className="earth-logo"/><h1>my travel journal.</h1>
             </div>
         )
 }

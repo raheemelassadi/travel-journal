@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
 $header-background: #F55A5A;
+$body-background: rgb(230, 230, 230);
 
 
 * {
@@ -8,7 +9,11 @@ $header-background: #F55A5A;
     padding: 0;
 }
 
-div {
+body {
+    background-color: $body-background;
+}
+
+.header-div {
     letter-spacing: -1px;
     padding: 2rem;
     height: 20px;
@@ -20,22 +25,14 @@ div {
     margin: 0;
 }
 
-.header-div {
-    width: 20rem;
-}
-
 h1 {
     display: inline;
     font-size: 1.3rem;
 
 }
 
-img {
+.earth-logo {
     margin-right: 1%;
     width: 50px;
     filter: invert(100%) sepia(6%) saturate(7498%) hue-rotate(180deg) brightness(102%) contrast(106%);
-}
-
-body {
-    background-color: white
 }

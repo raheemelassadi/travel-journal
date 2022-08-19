@@ -15,14 +15,14 @@ function App(){
 
 
     return(
-      <div>
-        <header>
+      <>
+        <div>
           <Header /> 
-        </header>
-        <main>
+        </div>
+        <main className="locations-container">
           {locations}
         </main>
-      </div>
+    </>
     )
   }
 
