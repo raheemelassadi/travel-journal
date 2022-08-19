@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+$header-background: #F55A5A;
+
+
+* {
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: auto;
+    padding: 2rem;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $header-background;
+    color: white;
+}
+
+h1 {
+    display: inline;
+    font-size: 1.3rem;
+}
+
+img {
+    margin-right: 4%;
+    width: 14%;
+    filter: invert(100%) sepia(6%) saturate(7498%) hue-rotate(180deg) brightness(102%) contrast(106%);
+}
+
+body {
+    background-color: white
+}
