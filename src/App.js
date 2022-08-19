@@ -1,20 +1,29 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import './app.scss'
+import Location from "./components/Location";
+import data from "./data";
 
-class App extends Component{
-  constructor(){
-    super()
+function App(){
 
-  }
+    const locations = data.map(journey => {
+      return <Location 
+                key={journey.id}
+                journey={journey}
+            />
+    })  
 
-  render(){
+
     return(
       <div>
-        <Header /> 
+        <header>
+          <Header /> 
+        </header>
+        <main>
+          {locations}
+        </main>
       </div>
     )
   }
-}
 
 export default App
